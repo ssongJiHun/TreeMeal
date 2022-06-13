@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.Ding.threemeal.Utils.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_height="1280"
+        sl:scale_base_width="720" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/smartphone"
+            sl:scale_height="595"
+            sl:scale_left="111"
+            sl:scale_top="191"
+            sl:scale_width="487" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notification01"
+            sl:scale_height="136"
+            sl:scale_left="52"
+            sl:scale_top="346"
+            sl:scale_width="616" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notification02"
+            sl:scale_height="115"
+            sl:scale_left="109"
+            sl:scale_top="471"
+            sl:scale_width="504" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notification03"
+            sl:scale_height="115"
+            sl:scale_left="109"
+            sl:scale_top="575"
+            sl:scale_width="504" />
+    </com.Ding.threemeal.Utils.ScalableLayout>
+
+    <TextView
+        android:id="@+id/HelloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="155dp"
+        android:text="시작하세요"
+        android:textColor="#ffffff"
+        android:textSize="27.5sp" />
+
+    <TextView
+        android:id="@+id/ContentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="81dp"
+        android:lineSpacingExtra="5.5dp"
+        android:text="아침, 점심, 저녁으로 급식 시간이 다가오기 전에 미리\n식단표를 알림으로 보내드립니다. 맛있는 메뉴를 절대\n놓치지 마세요."
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</FrameLayout>

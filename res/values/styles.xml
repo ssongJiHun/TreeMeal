@@ -1,0 +1,101 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:colorForeground">@color/colorForeground</item>
+    </style>
+
+    <style name="AppTheme_white" parent="AppTheme">
+        <item name="android:windowBackground">@color/colorForeground</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background_pressed</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CircularThemeProgressBar" parent="android:Widget.Holo.ProgressBar">
+        <item name="cpb_color">@color/cpb_default_color</item>
+        <item name="cpb_stroke_width">@dimen/cpb_default_stroke_width</item>
+        <item name="cpb_min_sweep_angle">@integer/cpb_default_min_sweep_angle</item>
+        <item name="cpb_max_sweep_angle">@integer/cpb_default_max_sweep_angle</item>
+        <item name="cpb_sweep_speed">@string/cpb_default_sweep_speed</item>
+        <item name="cpb_rotation_speed">@string/cpb_default_rotation_speed</item>
+    </style>
+
+    <!-- NUMBER PICKER -->
+
+    <style name="NumberPickerTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:attr/actionBarSize">56dip</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="numberPickerStyle">@style/NPWidget.Holo.NumberPicker</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">#20419a</item>
+    </style>
+
+    <style name="NPWidget">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+    </style>
+
+    <style name="NPWidget.NumberPicker">
+        <item name="android:orientation">vertical</item>
+        <item name="android:fadingEdge">vertical</item>
+        <item name="android:fadingEdgeLength">50dip</item>
+    </style>
+
+    <style name="NPWidget.Holo.NumberPicker" parent="NPWidget.NumberPicker">
+        <item name="solidColor">@android:color/transparent</item>
+        <item name="selectionDivider">@drawable/np_numberpicker_selection_divider</item>
+        <item name="selectionDividerHeight">0dip</item>
+        <item name="internalLayout">@layout/number_picker_with_selector_wheel</item>
+        <item name="internalMinWidth">64dip</item>
+        <item name="internalMaxHeight">68dip</item>
+        <item name="virtualButtonPressedDrawable">@android:color/transparent</item>
+    </style>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="kswOnDrawable" format="reference" />
+        <attr name="kswOffDrawable" format="reference" />
+        <attr name="kswThumbDrawable" format="reference" />
+        <attr name="kswThumb_margin" format="dimension|reference" />
+        <attr name="kswThumb_marginTop" format="dimension|reference" />
+        <attr name="kswThumb_marginBottom" format="dimension|reference" />
+        <attr name="kswThumb_marginLeft" format="dimension|reference" />
+        <attr name="kswThumb_marginRight" format="dimension|reference" />
+        <attr name="kswThumb_width" format="dimension|reference" />
+        <attr name="kswThumb_height" format="dimension|reference" />
+        <attr name="kswOnColor" format="color|reference" />
+        <attr name="kswOffColor" format="color|reference" />
+        <attr name="kswThumbColor" format="color|reference" />
+        <attr name="kswThumbPressedColor" format="color|reference" />
+        <attr name="kswAnimationVelocity" format="integer" />
+        <attr name="kswRadius" format="integer" />
+        <attr name="kswMeasureFactor" format="float" />
+        <attr name="kswInsetLeft" format="dimension|reference" />
+        <attr name="kswInsetRight" format="dimension|reference" />
+        <attr name="kswInsetTop" format="dimension|reference" />
+        <attr name="kswInsetBottom" format="dimension|reference" />
+    </declare-styleable>
+
+    <style name="MD">
+        <item name="kswAnimationVelocity">6</item>
+        <item name="kswInsetBottom">16dp</item>
+        <item name="kswInsetTop">16dp</item>
+        <item name="kswInsetLeft">16dp</item>
+        <item name="kswInsetRight">16dp</item>
+        <item name="kswMeasureFactor">1.4</item>
+        <item name="kswOffDrawable">@drawable/md_back_off</item>
+        <item name="kswOnDrawable">@drawable/md_back_on</item>
+        <item name="kswThumbDrawable">@drawable/md_thumb</item>
+        <item name="kswThumb_margin">-17dp</item>
+    </style>
+
+    <style name="MaterialDesignStyle" parent="MD">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+</resources>

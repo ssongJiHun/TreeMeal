@@ -1,0 +1,40 @@
+<resources>
+
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">48dp</dimen>
+    <dimen name="fab_icon_size">24dp</dimen>
+    <dimen name="fab_plus_icon_size">14dp</dimen>
+    <dimen name="fab_plus_icon_stroke">2dp</dimen>
+    <dimen name="fab_shadow_offset">3dp</dimen>
+    <dimen name="fab_shadow_radius">9dp</dimen>
+    <dimen name="fab_stroke_width">1dp</dimen>
+    <dimen name="fab_actions_spacing">16dp</dimen>
+    <dimen name="fab_labels_margin">8dp</dimen>
+
+    <bool name="default_circle_indicator_centered">false</bool>
+
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#80FFFFFF</color>
+
+    <integer name="default_circle_indicator_orientation">0</integer>
+
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+
+    <bool name="default_circle_indicator_snap">true</bool>
+
+    <color name="default_circle_indicator_stroke_color">#00000000</color>
+
+    <dimen name="default_circle_indicator_stroke_width">0dp</dimen>
+
+    <!-- 프로그래스바 -->
+    <color name="cpb_default_color">#33b5e5</color>
+
+    <dimen name="cpb_default_stroke_width">4dp</dimen>
+
+    <integer name="cpb_default_min_sweep_angle">20</integer>
+    <integer name="cpb_default_max_sweep_angle">300</integer>
+
+    <item name="cpb_default_sweep_speed" format="float" type="string">1</item>
+    <item name="cpb_default_rotation_speed" format="float" type="string">1</item>
+
+</resources>

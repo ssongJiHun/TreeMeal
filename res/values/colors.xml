@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="windowBackground">#146df3</color>
+    <color name="colorForeground">#ffffff</color>
+    <color name="gray">#dddddd</color>
+    <color name="floatingColor">#20419a</color>
+    <color name="floatingPressed">#ffffff</color>
+    <color name="gabButtonRipple">#1A000000</color>
+
+</resources>

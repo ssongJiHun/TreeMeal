@@ -1,0 +1,18 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+<!--     <style name="NumberPickerTheme" parent="@android:style/Theme.Holo.Light"> -->
+<!--         <item name="android:attr/actionBarSize">56dip</item> -->
+<!--         <item name="android:actionBarStyle">@style/MyActionBar</item> -->
+<!--         <item name="numberPickerStyle">@style/NPWidget.Holo.NumberPicker</item> -->
+<!--     </style> -->
+
+<!--     <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse"> -->
+<!--         <item name="android:background">#20419a</item> -->
+<!--     </style> -->
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.Ding.threemeal.Utils.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_height="1280"
+        sl:scale_base_width="720" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cloudlight"
+            sl:scale_height="291"
+            sl:scale_left="15"
+            sl:scale_top="190"
+            sl:scale_width="689" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cloudshadow"
+            sl:scale_height="84"
+            sl:scale_left="204"
+            sl:scale_top="523"
+            sl:scale_width="312" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cloud"
+            sl:scale_height="252"
+            sl:scale_left="188"
+            sl:scale_top="267"
+            sl:scale_width="344" />
+    </com.Ding.threemeal.Utils.ScalableLayout>
+
+    <TextView
+        android:id="@+id/HelloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="156dp"
+        android:text="데이터 출처"
+        android:textColor="#ffffff"
+        android:textSize="27.5sp" />
+
+    <TextView
+        android:id="@+id/ContentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="81dp"
+        android:lineSpacingExtra="5.5dp"
+        android:text="대국민 서비스 나이스를 통해서 정보를 가져오거나\n자체 홈페이지를 통해서 가져오는 방식 이기 때문에\n지원하지 않는 학교가 있을 수 있습니다."
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</FrameLayout>

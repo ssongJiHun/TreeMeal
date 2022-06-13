@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/widget_style"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/MealSlot"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/widget_style_slot"
+        android:gravity="center"
+        android:text="아침"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/MealMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="113dp"
+        android:layout_marginRight="38dp"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="10dp"
+        android:maxLines="3"
+        android:text="메뉴를 불러옵니다."
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+</FrameLayout>

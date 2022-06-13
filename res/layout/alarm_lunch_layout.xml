@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ff6927" >
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="62dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/obj_203" />
+
+    <ImageView
+        android:layout_width="107dp"
+        android:layout_height="60.5dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="-17.5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/obj_201" />
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="77dp"
+        android:layout_marginLeft="162.5dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/obj_202" />
+
+    <ImageView
+        android:layout_width="71dp"
+        android:layout_height="61.5dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="141dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/obj_204" />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="217.5dp"
+        android:layout_marginTop="116.5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/obj_205" />
+
+    <ImageView
+        android:layout_width="62.5dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="122dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/obj_206" />
+
+    <ImageView
+        android:layout_width="64.5dp"
+        android:layout_height="44.5dp"
+        android:layout_marginLeft="295.5dp"
+        android:layout_marginTop="143dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/obj_207" />
+
+    <ImageView
+        android:layout_width="30.5dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="329.5dp"
+        android:layout_marginTop="44.5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/obj_208" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TopView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="LUNCH"
+            android:textColor="#fdc98c"
+            android:textSize="20dp" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/timeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.Ding.threemeal.Utils.NumberPicker
+                    android:id="@+id/HourPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="22dp"
+                    android:scaleX="2.0"
+                    android:scaleY="2.0">
+                </com.Ding.threemeal.Utils.NumberPicker>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text=":"
+                    android:textColor="#fdc98c"
+                    android:textSize="50dp" />
+
+                <com.Ding.threemeal.Utils.NumberPicker
+                    android:id="@+id/MinutePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="22dp"
+                    android:scaleX="2.0"
+                    android:scaleY="2.0" >
+                </com.Ding.threemeal.Utils.NumberPicker>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

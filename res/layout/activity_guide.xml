@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.2"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_gravity="bottom"
+        android:background="#80ffffff" />
+
+    <!-- 다음일때는 rightPadding = 0  시작하기는 rightPadding = 25 -->
+
+    <LinearLayout
+        android:id="@+id/IndicatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="0.8"
+        android:paddingLeft="25dp" >
+
+        <com.Ding.threemeal.Adapter.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="6" />
+
+        <Button
+            android:id="@+id/SkipButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/guide_button_ripple"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="건너뛰기"
+            android:textColor="@color/colorForeground"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/NextButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/guide_button_ripple"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="다음"
+            android:textColor="@color/colorForeground"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/StartButton"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:background="@drawable/guide_button_ripple"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="시작하기"
+            android:textColor="@color/colorForeground"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

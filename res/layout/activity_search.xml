@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/windowBackground"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="68dp" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="@drawable/edittext_style"
+            android:ems="10"
+            android:hint="학교이름"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="60dp"
+            android:paddingRight="53.33dp"
+            android:popupBackground="@android:color/white"
+            android:textColor="#ffffff"
+            android:textColorHint="#84b5fe"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="16dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_search_white_24dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_close_white_24dp" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_shadow"
+        android:clipToPadding="false"
+        android:divider="@drawable/divider_style"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:overScrollFooter="@android:color/transparent"
+        android:paddingBottom="24dp"
+        android:paddingTop="24dp"
+        android:scrollbars="none" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/schoolLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.Ding.threemeal.Utils.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="105dp"
+            sl:scale_base_height="234"
+            sl:scale_base_width="720" >
+
+            <ImageView
+                android:id="@+id/schoolIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/school"
+                sl:scale_height="234"
+                sl:scale_left="213.5"
+                sl:scale_top="0"
+                sl:scale_width="293" />
+        </com.Ding.threemeal.Utils.ScalableLayout>
+
+        <TextView
+            android:id="@+id/schoolTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="학교를 검색해주세요."
+            android:textColor="#252525"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/schoolContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="어떤 학교의 식단표를 알고 싶으신가요?"
+            android:textColor="#b7b7b7"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/listViewFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        layout="@layout/footer_search" />
+
+</LinearLayout>

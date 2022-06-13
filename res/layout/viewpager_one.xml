@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.Ding.threemeal.Utils.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_height="1280"
+        sl:scale_base_width="720" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pizza_object_1"
+            sl:scale_height="98"
+            sl:scale_left="23"
+            sl:scale_top="14"
+            sl:scale_width="85" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cheese_object"
+            sl:scale_height="120"
+            sl:scale_left="614"
+            sl:scale_top="160"
+            sl:scale_width="106" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/egg_object"
+            sl:scale_height="193"
+            sl:scale_left="203"
+            sl:scale_top="59"
+            sl:scale_width="166" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/spoon_object"
+            sl:scale_height="128"
+            sl:scale_left="391"
+            sl:scale_top="-20"
+            sl:scale_width="56" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banana_object"
+            sl:scale_height="162"
+            sl:scale_left="423"
+            sl:scale_top="206"
+            sl:scale_width="98" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/watermelon_object"
+            sl:scale_height="179"
+            sl:scale_left="23"
+            sl:scale_top="203"
+            sl:scale_width="152" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_ico"
+            sl:scale_height="320"
+            sl:scale_left="200"
+            sl:scale_top="265"
+            sl:scale_width="320" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pizza_object"
+            sl:scale_height="127"
+            sl:scale_left="497"
+            sl:scale_top="50"
+            sl:scale_width="111" />
+    </com.Ding.threemeal.Utils.ScalableLayout>
+
+    <TextView
+        android:id="@+id/HelloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="150dp"
+        android:text="안녕하세요"
+        android:textColor="#ffffff"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/ContentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="99dp"
+        android:lineSpacingExtra="5.5dp"
+        android:text="삼시세끼는 전국 식단표를 알려주는 하이브리드\n애플리케이션 입니다."
+        android:textColor="#ffffff" />
+
+</FrameLayout>

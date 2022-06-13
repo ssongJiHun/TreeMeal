@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Ding.threemeal.MainActivity" >
+
+    <com.Ding.threemeal.Utils.GestureWebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+
+    <View
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8020419a"
+        android:text=""
+        android:visibility="gone" />
+
+    <com.Ding.threemeal.FAB.FloatingActionsMenu
+        android:id="@+id/floatingMenu"
+        android:layout_width="70dp"
+        android:layout_height="110dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="16dp"
+        fab:fab_addButtonColorNormal="@color/floatingColor"
+        fab:fab_addButtonColorPressed="@color/floatingPressed"
+        fab:fab_addButtonicon="@drawable/ic_settings_white_24dp"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        fab:fab_labelsPosition="left" >
+
+        <com.Ding.threemeal.FAB.FloatingActionButton
+            android:id="@+id/Action_restore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/floatingColor"
+            fab:fab_colorPressed="@color/floatingPressed"
+            fab:fab_icon="@drawable/ic_settings_backup_restore_white_24dp"
+            fab:fab_size="mini"
+            fab:fab_title="초기화" />
+
+        <com.Ding.threemeal.FAB.FloatingActionButton
+            android:id="@+id/Action_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/floatingColor"
+            fab:fab_colorPressed="@color/floatingPressed"
+            fab:fab_icon="@drawable/ic_refresh_white_24dp"
+            fab:fab_size="mini"
+            fab:fab_title="새로고침" />
+
+        <com.Ding.threemeal.FAB.FloatingActionButton
+            android:id="@+id/Action_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/floatingColor"
+            fab:fab_colorPressed="@color/floatingPressed"
+            fab:fab_icon="@drawable/ic_alarm_white_24dp"
+            fab:fab_size="mini"
+            fab:fab_title="알람설정" />
+
+        <com.Ding.threemeal.FAB.FloatingActionButton
+            android:id="@+id/Action_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/floatingColor"
+            fab:fab_colorPressed="@color/floatingPressed"
+            fab:fab_icon="@drawable/ic_search_white_24dp"
+            fab:fab_size="mini"
+            fab:fab_title="학교설정" />
+    </com.Ding.threemeal.FAB.FloatingActionsMenu>
+
+</FrameLayout>
